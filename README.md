@@ -64,18 +64,18 @@ ___
 
 ## 🚀 Instrucciones de Uso
 1. Acceso al Dashboard
-- ⚪ Al iniciar la aplicación, encontrarás un panel principal con acceso a todas las funcionalidades: gestión de estudiantes, cursos, materias, comisiones, profesores e inscripciones.
+- Al iniciar la aplicación, encontrarás un panel principal con acceso a todas las funcionalidades: gestión de estudiantes, cursos, materias, comisiones, profesores e inscripciones.
 
 2. Funcionalidades Clave
-- ⚪CRUD completo para:
+- CRUD completo para:
    * Estudiantes
    * Materias
    * Cursos
    * Comisiones
    * Profesores
    * Inscripciones de Estudiantes
-- ⚪Filtros avanzados y búsquedas globales.
-- ⚪Generación y exportación de reportes en PDF o Excel.
+- Filtros avanzados y búsquedas globales.
+- Generación y exportación de reportes en PDF o Excel.
    
 ___
 
