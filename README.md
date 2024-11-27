@@ -34,29 +34,29 @@ Desarrollar un sistema que permita:
    git clone <URL-del-repositorio>
    cd <directorio-del-proyecto>
    ```
-   2. **Instalar dependencias**
+2. **Instalar dependencias**
    ```bash
    composer install
    npm install
    ```
-   3. **Configurar el entorno**
+3. **Configurar el entorno**
    ```bash
    Copiar el archivo de ejemplo .env:
    cp .env.example .env
    ```
-   4. **Configurar el entorno**
+4. **Configurar el entorno**
    ```bash
    php artisan key:generate
    ```
-      5. **Configurar el entorno**
+5. **Configurar el entorno**
    ```bash
    php artisan migrate
    ```
-   6. **Configurar el entorno**
+6. **Configurar el entorno**
    ```bash
    php artisan serve
    ```
-   7. **Configurar el entorno**
+7. **Configurar el entorno**
    ```bash
    npm run dev
    ```
