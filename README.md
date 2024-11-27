@@ -1,9 +1,9 @@
 # TPILaboratorioIV
 
 👥 Integrantes del Grupo
-Dominguez Rach Agustín - Legajo: 25795
-Durini Nefle Enzo - Legajo: 27089
-Muñoz Nicolás Gustavo - Legajo: 25744
+- Dominguez Rach Agustín - Legajo: 25795
+- Durini Nefle Enzo - Legajo: 27089
+- Muñoz Nicolás Gustavo - Legajo: 25744
 
 # Sistema de Gestión Escolar - Laravel
 
@@ -12,7 +12,7 @@ Este sistema de gestión escolar permite administrar entidades clave de una escu
 
 ### 🎯 Objetivo
 Desarrollar un sistema que permita:
- Administrar estudiantes, cursos, materias, comisiones y profesores.
+- Administrar estudiantes, cursos, materias, comisiones y profesores.
 - Gestionar inscripciones de estudiantes en cursos y comisiones.
 - Generar reportes exportables en PDF o Excel.
 
@@ -35,31 +35,32 @@ Desarrollar un sistema que permita:
    cd <directorio-del-proyecto>
    ```
 2. Instalar dependencias
-```bash
-composer install
-npm install
-```
+  ```bash
+  composer install
+  npm install
+  ```
 3. Configurar el entorno
-```bash
-Copiar el archivo de ejemplo .env:
-cp .env.example .env
-```
+  ```bash
+  Copiar el archivo de ejemplo .env:
+  cp .env.example .env
+  ```
 4. Generar la clave de la aplicación
-```bash
-php artisan key:generate
-```
+  ```bash
+  php artisan key:generate
+  ```
 5. Crear las tablas y relaciones
-```bash
-php artisan migrate
-```
+  ```bash
+  php artisan migrate
+  ```
 6. Ejecutar el servidor de desarrollo
-```bash
-php artisan serve
-```
+  ```bash
+  php artisan serve
+  ```
 7. Compilar assets frontend
-```bash
-npm run dev
-```
+  ```bash
+  npm run dev
+  ```
+___
 
 🚀 Instrucciones de Uso
 1. Acceso al Dashboard
@@ -76,6 +77,8 @@ npm run dev
    ⚪Filtros avanzados y búsquedas globales.
    ⚪Generación y exportación de reportes en PDF o Excel.
    
+___
+
 📑 Requerimientos Funcionales
    *CRUDs*
       1. Estudiantes: Crear, editar, eliminar y listar estudiantes. Filtros por nombre y curso.
