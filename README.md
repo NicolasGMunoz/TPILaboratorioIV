@@ -82,29 +82,47 @@ ___
 📑 Requerimientos Funcionales
 
    -**CRUDs**
+   
       - 1. Estudiantes: Crear, editar, eliminar y listar estudiantes. Filtros por nombre y curso.
+      
       - 2. Materias: Crear, editar, eliminar y listar materias.
+      
       - 3. Cursos: Crear, editar, eliminar y listar cursos. Filtros por materia y comisiones.
+      
       - 4. Comisiones: Crear, editar, eliminar y listar comisiones. Filtros por curso y horario.
+
       - 5. Profesores: Crear, editar, eliminar y listar profesores. Asignación de comisiones.
+      
       - 6. Inscripciones: Gestionar inscripciones de estudiantes en cursos y comisiones.
 
    -**Reportes**
+   
       - 1. Estudiantes inscritos: Lista de estudiantes con sus cursos y comisiones.
+      
       - 2. Cursos por materia: Cursos agrupados por materias.
+      
       - 3. Comisiones y horarios: Información de aulas, horarios y profesores asignados.
+      
       - 4. Asistencia de profesores: Listado de profesores con comisiones asignadas.
+      
 
    -**Navegación**
+   
       - 1. Dashboard inicial para acceder a todas las funcionalidades.
+      
       - 2. Listados con botones para Crear, Editar y Eliminar.
+      
       - 3. Opcional: Paginación para listados largos.
 
 ___
 
 🧾 Notas Adicionales
+
      - ⚪Asegúrate de tener instalado Laravel y Composer en tu máquina.
+     
      - ⚪Revisa que la base de datos esté correctamente configurada en el archivo .env.
+     
      - ⚪Para más información sobre Laravel, consulta su documentación oficial.
+     
 
 
