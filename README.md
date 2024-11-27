@@ -81,7 +81,7 @@ ___
 
 ## 📑 Requerimientos Funcionales
 
--**CRUDs**
+**CRUDs**
    
 1. Estudiantes: Crear, editar, eliminar y listar estudiantes. Filtros por nombre y curso.
       
@@ -95,7 +95,7 @@ ___
       
 6. Inscripciones: Gestionar inscripciones de estudiantes en cursos y comisiones.
 
--**Reportes**
+**Reportes**
    
 1. Estudiantes inscritos: Lista de estudiantes con sus cursos y comisiones.
       
@@ -106,7 +106,7 @@ ___
 4. Asistencia de profesores: Listado de profesores con comisiones asignadas.
       
 
--**Navegación**
+**Navegación**
    
 1. Dashboard inicial para acceder a todas las funcionalidades.
       
