@@ -12,7 +12,7 @@ Este sistema de gestión escolar permite administrar entidades clave de una escu
 
 ### 🎯 Objetivo
 Desarrollar un sistema que permita:
-- Administrar estudiantes, cursos, materias, comisiones y profesores.
+ Administrar estudiantes, cursos, materias, comisiones y profesores.
 - Gestionar inscripciones de estudiantes en cursos y comisiones.
 - Generar reportes exportables en PDF o Excel.
 
