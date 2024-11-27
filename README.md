@@ -108,21 +108,21 @@ ___
 
    -**Navegación**
    
-- 1. Dashboard inicial para acceder a todas las funcionalidades.
+  1. Dashboard inicial para acceder a todas las funcionalidades.
       
-- 2. Listados con botones para Crear, Editar y Eliminar.
+  2. Listados con botones para Crear, Editar y Eliminar.
       
-- 3. Opcional: Paginación para listados largos.
+  3. Opcional: Paginación para listados largos.
 
 ___
 
 ## 🧾 Notas Adicionales
 
-   - ⚪Asegúrate de tener instalado Laravel y Composer en tu máquina.
+   - Asegúrate de tener instalado Laravel y Composer en tu máquina.
      
-   - ⚪Revisa que la base de datos esté correctamente configurada en el archivo .env.
+   - Revisa que la base de datos esté correctamente configurada en el archivo .env.
      
-   - ⚪Para más información sobre Laravel, consulta su documentación oficial.
+   - Para más información sobre Laravel, consulta su documentación oficial.
      
 
 
