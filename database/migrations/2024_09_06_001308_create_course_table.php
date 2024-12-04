@@ -12,19 +12,20 @@ class CreateCourseTable extends Migration
      * @return void
      */
     
-    public function up()
-        {
-            Schema::create('courses', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-           // $table->foreignId('subject_id')->constrained('subjects')->onDelete('cascade');
-            $table->timestamps();
-        });
-        }
-        public function down()
-        {
-            Schema::dropIfExists('courses');
-        }
+     public function up()
+     {
+         Schema::create('courses', function (Blueprint $table) {
+             $table->id();
+             $table->string('nombre');
+             $table->foreignId('subject_id')->constrained('subjects')->onDelete('cascade');
+             $table->timestamps();
+         });
+     }
+     
+     public function down()
+     {
+         Schema::dropIfExists('courses');
+     }
 
 
 }

@@ -9,13 +9,21 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['nombre', 'subject_id'];
 
-// Un curso tiene muchos estudiantes
- public function students()
- {
-   return $this->hasMany(Student::class);
- }
+    public function subject()
+    {
+        return $this->belongsTo(Subject::class);
+    }
 
+    public function commissions()
+    {
+        return $this->hasMany(Commission::class);
+    }
 
+    public function courseStudents()
+    {
+        return $this->hasMany(CourseStudent::class);
+    }
 }
+

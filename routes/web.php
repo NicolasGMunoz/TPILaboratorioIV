@@ -3,7 +3,12 @@ use App\Http\Controllers\CalculationController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Student;
 use App\Models\Course;
-
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CommissionController;
+use App\Http\Controllers\ProfessorController;
+use App\Http\Controllers\CourseStudentController;
 
 
 
@@ -18,6 +23,7 @@ use App\Models\Course;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,6 +32,12 @@ Route::get('/', function () {
 
 Route::get('/calculate', [CalculationController::class, 'showForm'])->name('calculate.form');
 Route::post('/calculate', [CalculationController::class, 'calculate'])->name('calculate.result');
+Route::resource('students', StudentController::class);
+Route::resource('subjects', SubjectController::class);
+Route::resource('courses', CourseController::class);
+Route::resource('commissions', CommissionController::class);
+Route::resource('professors', ProfessorController::class);
+Route::resource('course_students', CourseStudentController::class);
 
 
 Route::get('/saludo', [App\Http\Controllers\mensajesController::class, 'saludo'])->name('saludo.form');
