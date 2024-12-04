@@ -11,6 +11,11 @@ class Student extends Model
 
     protected $fillable = ['nombre', 'email'];
 
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class, 'course_students', 'student_id', 'course_id');
+    }
+
     public function courseStudents()
     {
         return $this->hasMany(CourseStudent::class);

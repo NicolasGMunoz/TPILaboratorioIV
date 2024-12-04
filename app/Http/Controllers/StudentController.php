@@ -1,16 +1,36 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\Student;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    public function index()
-    {
-        $students = Student::all();
-        return view('students.index', compact('students'));
+ 
+    public function index(Request $request)
+{
+    $query = Student::query();
+
+    // Filtra por nombre
+    if ($request->filled('nombre')) {
+        $query->where('nombre', 'like', '%' . $request->nombre . '%');
     }
+
+    // Filtra por curso
+if ($request->filled('curso_id')) {
+    $query->whereHas('courses', function ($q) use ($request) {
+        $q->where('courses.id', $request->curso_id); 
+    });
+}
+
+
+    $students = $query->with('courses')->get();
+    $courses = Course::all(); // Para el dropdown de cursos
+
+    return view('students.index', compact('students', 'courses'));
+}
+
 
     public function create()
     {

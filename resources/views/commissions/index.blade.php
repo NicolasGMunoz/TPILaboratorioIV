@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Listado de Comisiones</h1>
+    <h1 class="mb-4">Comisiones</h1>
     <a href="{{ route('commissions.create') }}" class="btn btn-primary mb-3">Crear Comisión</a>
 
     @if ($commissions->count())

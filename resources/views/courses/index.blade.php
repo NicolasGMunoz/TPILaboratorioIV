@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Listado de Cursos</h1>
+    <h1 class="mb-4">Lista de Cursos</h1>
     <a href="{{ route('courses.create') }}" class="btn btn-primary mb-3">Crear Curso</a>
 
     @if ($courses->count())
