@@ -5,6 +5,8 @@
 - Durini Nefle Enzo - Legajo: 27089
 - Muñoz Nicolás Gustavo - Legajo: 25744
 
+https://youtu.be/nPZvW2bxmnc
+
 # Sistema de Gestión Escolar - Laravel
 
 ## 📋 Descripción del Proyecto
