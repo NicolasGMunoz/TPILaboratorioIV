@@ -6,11 +6,19 @@ use Illuminate\Http\Request;
 
 class ProfessorController extends Controller
 {
-    public function index()
-    {
-        $professors = Professor::all();
-        return view('professors.index', compact('professors'));
+    public function index(Request $request)
+{
+    $query = Professor::query();
+
+    // Filtrar por nombre
+    if ($request->filled('nombre')) {
+        $query->where('nombre', 'like', '%' . $request->nombre . '%');
     }
+
+    $professors = $query->get();
+
+    return view('professors.index', compact('professors'));
+}
 
     public function create()
     {

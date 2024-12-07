@@ -3,6 +3,19 @@
 @section('content')
 <div class="container">
     <h1 class="mb-4">Profesores</h1>
+
+    <form method="GET" action="{{ route('professors.index') }}" class="mb-4">
+    <div class="row">
+        <div class="col-md-10">
+            <input type="text" name="nombre" class="form-control" placeholder="Buscar por nombre" value="{{ request('nombre') }}">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </div>
+</form>
+
+
     <a href="{{ route('professors.create') }}" class="btn btn-primary mb-3">Crear Profesor</a>
 
     @if ($professors->count())

@@ -3,6 +3,28 @@
 @section('content')
 <div class="container">
     <h1 class="mb-4">Lista de Cursos</h1>
+
+    <form method="GET" action="{{ route('courses.index') }}" class="mb-4">
+    <div class="row">
+        <div class="col-md-10">
+            <select name="subject_id" class="form-control">
+                <option value="">-- Filtrar por Materia --</option>
+                @foreach($subjects as $subject)
+                    <option value="{{ $subject->id }}" {{ request('subject_id') == $subject->id ? 'selected' : '' }}>
+                        {{ $subject->nombre }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </div>
+    </div>
+</form>
+
+
+
+
     <a href="{{ route('courses.create') }}" class="btn btn-primary mb-3">Crear Curso</a>
 
     @if ($courses->count())

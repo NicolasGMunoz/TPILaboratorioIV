@@ -3,6 +3,29 @@
 @section('content')
 <div class="container">
     <h1 class="mb-4">Comisiones</h1>
+
+    <form method="GET" action="{{ route('commissions.index') }}" class="mb-4">
+    <div class="row">
+        <div class="col-md-6">
+            <select name="course_id" class="form-control">
+                <option value="">-- Filtrar por Curso --</option>
+                @foreach($courses as $course)
+                    <option value="{{ $course->id }}" {{ request('course_id') == $course->id ? 'selected' : '' }}>
+                        {{ $course->nombre }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="horario" class="form-control" placeholder="Filtrar por horario" value="{{ request('horario') }}">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </div>
+    </div>
+</form>
+
+
     <a href="{{ route('commissions.create') }}" class="btn btn-primary mb-3">Crear Comisión</a>
 
     @if ($commissions->count())

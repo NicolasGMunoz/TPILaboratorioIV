@@ -7,11 +7,26 @@ use Illuminate\Http\Request;
 
 class CommissionController extends Controller
 {
-    public function index()
-    {
-        $commissions = Commission::with('course')->get();
-        return view('commissions.index', compact('commissions'));
+    public function index(Request $request)
+{
+    $query = Commission::query();
+
+    // Filtrar por curso
+    if ($request->filled('course_id')) {
+        $query->where('course_id', $request->course_id);
     }
+
+    // Filtrar por horario
+    if ($request->filled('horario')) {
+        $query->where('horario', 'like', '%' . $request->horario . '%');
+    }
+
+    $commissions = $query->with('course')->get();
+    $courses = Course::all(); // Para poblar el dropdown de cursos
+
+    return view('commissions.index', compact('commissions', 'courses'));
+}
+
 
     public function create()
     {

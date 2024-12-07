@@ -7,10 +7,17 @@ use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $courses = Course::with('subject')->get();
-        return view('courses.index', compact('courses'));
+        $query = Course::query();
+    
+        if ($request->filled('subject_id')) {
+            $query->where('subject_id', $request->subject_id);
+        }
+    
+        $courses = $query->with('subject')->get();
+        $subjects = Subject::all(); 
+        return view('courses.index', compact('courses', 'subjects'));
     }
 
     public function create()
