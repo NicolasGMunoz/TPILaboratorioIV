@@ -4,10 +4,18 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Models\Student;
 use Illuminate\Http\Request;
-
+use Barryvdh\DomPDF\Facade\Pdf;
 class StudentController extends Controller
 {
  
+
+    public function reportStudentsPDF()
+{
+    $students = Student::with(['courses', 'courses.commissions'])->get(); // Incluye los cursos y comisiones
+    $pdf = Pdf::loadView('reports.students', compact('students'));
+    return $pdf->download('reporte_estudiantes.pdf');
+}
+
     public function index(Request $request)
 {
     $query = Student::query();

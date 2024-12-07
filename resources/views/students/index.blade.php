@@ -65,5 +65,11 @@
     @else
         <p>No hay estudiantes registrados.</p>
     @endif
+
+    <a href="{{ route('students.report.pdf') }}" class="btn btn-success mb-3">Generar Reporte en PDF</a>
 </div>
+
+
+
+
 @endsection

@@ -16,4 +16,5 @@ Route::resource('courses', CourseController::class);
 Route::resource('commissions', CommissionController::class);
 Route::resource('professors', ProfessorController::class);
 Route::resource('course_students', CourseStudentController::class);
+Route::get('/students/report/pdf', [StudentController::class, 'reportStudentsPDF'])->name('students.report.pdf');
 
