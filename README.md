@@ -1,4 +1,4 @@
-# TPILaboratorioIV
+# TPI Laboratorio IV
 
 👥 Integrantes del Grupo
 - Dominguez Rach Agustín - Legajo: 25795
